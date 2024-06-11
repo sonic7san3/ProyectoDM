@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'rutinadtl.dart';
 
 class DetallesRutina extends StatelessWidget {
   const DetallesRutina({super.key});
@@ -7,7 +8,7 @@ class DetallesRutina extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String juegoUso = "assets/icons/superonce.svg";
-
+    String InfodRutina = "assets/icons/training-gym-svgrepo-com.svg";
     return Scaffold(
       appBar: AppBar(
 
@@ -25,23 +26,20 @@ class DetallesRutina extends StatelessWidget {
             Text("Detalles del juego: RPG de deportes", style: TextStyle(fontFamily: "SonicFont")),
              Padding(padding: EdgeInsets.only(bottom: 20)),
             Text("Solo para Nintendo Switch", style: TextStyle(fontFamily: "SonicFont")),
-             Padding(padding: EdgeInsets.only(bottom: 60)),
-            Text("Mision diaria: ", style: TextStyle(fontFamily: "SonicFont")),
              Padding(padding: EdgeInsets.only(bottom: 20)),
-            Text("Regatea a 5 jugadores en un partido", style: TextStyle(fontFamily: "SonicFont")),
-             Padding(padding: EdgeInsets.only(bottom: 30)),
-             Text("Mision semanal: ", style: TextStyle(fontFamily: "SonicFont")),
-             Padding(padding: EdgeInsets.only(bottom: 20)),
-            Text("Gana 10 partidos", style: TextStyle(fontFamily: "SonicFont")),
-             Padding(padding: EdgeInsets.only(bottom: 80)),
+            ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(                 
+                builder: (context) => const InfoRutina())); 
+            },
+            child: SvgPicture.asset(InfodRutina, height: 100, width: 100,)),
+            Padding(padding: EdgeInsets.only(bottom: 50)),
             Text("Horas de juego: ", style: TextStyle(fontFamily: "SonicFont")),
              Padding(padding: EdgeInsets.only(bottom: 10)),
             Text("12 horas", style: TextStyle(fontFamily: "SonicFont")),
-             Padding(padding: EdgeInsets.only(bottom: 60)),
-            Text("Veces hecho: ", style: TextStyle(fontFamily: "SonicFont")),
-             Padding(padding: EdgeInsets.only(bottom: 10)),
-            Text("0/5 ", style: TextStyle(fontFamily: "SonicFont")),
-             Padding(padding: EdgeInsets.only(bottom: 20)),
+             Padding(padding: EdgeInsets.only(bottom: 60))
           ],  
         ),
       ),

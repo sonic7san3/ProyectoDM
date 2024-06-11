@@ -9,9 +9,10 @@ class perfilJugador extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    String iconoUser = "assets/icons/usuario.svg";
+    String iconoUser = "assets/icons/pory.svg";
     String empresaFav = "assets/icons/nintendo.svg";
     String juegoUso = "assets/icons/superonce.svg";
+    
 
     return Scaffold(
       appBar: AppBar(
@@ -27,22 +28,26 @@ class perfilJugador extends StatelessWidget {
               mainAxisAlignment:MainAxisAlignment.center,
               children: [
               SvgPicture.asset(iconoUser, height: 75, width: 75,),
+              
+              const Padding(padding: EdgeInsets.only(right: 15)),
               Text("Nombre de usuario:", style: TextStyle(fontFamily: "SonicFont")),
                Text("SonicSans", style: TextStyle(fontFamily: "SonicFont")),
-               const Padding(padding: EdgeInsets.only(bottom: 10)),
+               
               ],
             ),
+             const Padding(padding: EdgeInsets.only(bottom: 75)),
             Row( 
               mainAxisAlignment:MainAxisAlignment.center,
               children: [
-              
+             
               Text('Empresa favorita:',  style: TextStyle(fontFamily: 'SonicFont')),
+              const Padding(padding: EdgeInsets.only(right: 5)),
               SvgPicture.asset(empresaFav, height: 100, width: 100,),
-            const Padding(padding: EdgeInsets.only(bottom: 100)),
+            
 
           ],
           ),
-          
+          const Padding(padding: EdgeInsets.only(bottom: 75)),
           Text('Juego en practica actual: ',  style: TextStyle(fontFamily: 'SonicFont')),
             const Padding(padding: EdgeInsets.only(bottom: 25)),
             ElevatedButton(
