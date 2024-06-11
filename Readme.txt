@@ -1,5 +1,5 @@
-GitHub:
-Video YouTube:
+GitHub:https://github.com/sonic7san3/ProyectoDM
+Video YouTube:https://youtu.be/W7NOtbCKogU
 Requerimientos Funcionales: Inicio de Usuario con Contraseña
 Rutinas al azar al ver el juego seleccionado
 Ventanas y botones van a donde indican correctamente
