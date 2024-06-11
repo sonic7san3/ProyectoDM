@@ -40,15 +40,15 @@ class MyCustomForm extends StatelessWidget {
               decoration: const InputDecoration(
                 labelText: 'Ingrese su nombre de usuario',
               ),
-              readOnly: true, // Desactiva la entrada de texto
+              readOnly: false, // Desactiva la entrada de texto
             ),
             const SizedBox(height: 16),
             TextField(
               decoration: const InputDecoration(
                 labelText: 'Ingrese su Contraseña',
               ),
-              obscureText: true,
-              readOnly: true, // Desactiva la entrada de texto
+              obscureText: false,
+              readOnly: false, // Desactiva la entrada de texto
             ),
             const SizedBox(height: 32),
             ElevatedButton(
